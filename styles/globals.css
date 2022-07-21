@@ -17,3 +17,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.navbar{
+  z-index: 100;
+}
+
+h{
+  font-family: monospace;
+}
