@@ -27,7 +27,7 @@ const Page = () => {
        try {
         const response = await axios.request(reqOptions)
         setCount(response.data.count)
-        setbrands(response.data.influencer)
+        setbrands(response.data.influencer.reverse())
         console.log(response)
       } catch (error) {
         toast.error("you are not authorizied");
