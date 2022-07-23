@@ -38,7 +38,7 @@ const Login = () => {
             const response = await axios.request(reqOptions)
             const { token } = response.data;
             localStorage.setItem('token', token)
-            router.push('/admin/dashboard/brands')
+            router.push('/admin/dashboard')
             toast.success(`Welcome ${response.data.user.name}`)
             // setEmail("")
             // setPassword("")
