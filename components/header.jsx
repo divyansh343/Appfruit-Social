@@ -1,23 +1,52 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 
+
+const getToken = () => {
+  const tok = localStorage.getItem('token')
+  return tok;
+}
 const Header = () => {
+  const router = useRouter()
+  const[token, settoken] = useState(false)
+
+  useEffect(() => {
+    settoken(getToken())
+  }, [token])
+
+  const logOutUser = () => {
+    if (localStorage.getItem('token') === null) {
+      console.log({ message: "user alredy logged Out" });
+    }
+    const token = localStorage.clear();
+    settoken(false)
+    router.push('/')
+    console.log({ message: "user logged Out" });
+  }
+
   return (
     <>
       <header className="fixed w-full navbar">
-        <nav className="bg-yellow-300  py-2.5 dark:bg-gray-900">
+        <nav className="bg-yellow-400  py-2.5 dark:bg-gray-900">
           <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
             <Link href="/" >
-            <a className="flex items-center">
-              {/* <Image src="https://demo.themesberg.com/landwind/images/logo.svg" className="h-6 mr-3 sm:h-9" alt="Landwind Logo" /> */}
-              <span className="self-center text-l font-semibold whitespace-nowrap hover:border-b-1 bor  dark:text-white font-mono">TheSocialCHARTS.com</span>
-            </a>
+              <a className="flex items-center">
+                {/* <Image src="https://demo.themesberg.com/landwind/images/logo.svg" className="h-6 mr-3 sm:h-9" alt="Landwind Logo" /> */}
+                <span className="self-center text-l font-semibold whitespace-nowrap hover:border-b-1 bor  dark:text-white font-mono">TheSocialCHARTS.com</span>
+              </a>
             </Link>
             <div className="flex items-center lg:order-2">
-              
+
               <a href="#" target="_blank"
                 className="text-white bg-purple-700 font-mono hover:bg-blue-900 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Download</a>
+              {
+                token &&
+                <a
+                  onClick={logOutUser}
+                  className="mx-1 text-white bg-purple-700 font-mono hover:bg-blue-900 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">logout</a>
+              }
 
               <button data-collapse-toggle="mobile-menu-2" type="button" className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
                 <span className="sr-only">Open main menu</span>
@@ -27,13 +56,7 @@ const Header = () => {
             </div>
             <div className="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
               <ul className="flex flex-col mt-4 font-medium font-mono lg:flex-row lg:space-x-8 lg:mt-0">
-                <li>
-                <Link href="/">
-                  <a 
-                    className="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white"
-                    aria-current="page">Home</a>
-                </Link>
-                </li>
+
                 <li>
                   <Link href="/about">
                     <a href="#"
@@ -42,7 +65,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link href="/brands">
-                    <a 
+                    <a
                       className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">For brands</a>
                   </Link>
                 </li>
@@ -60,6 +83,15 @@ const Header = () => {
                   </Link>
                 </li>
                 
+                {token &&
+                  <li>
+                    <Link href="/admin/dashboard/brands">
+                      <a
+                        className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">dashboard</a>
+                    </Link>
+                  </li>
+                }
+
               </ul>
             </div>
           </div>

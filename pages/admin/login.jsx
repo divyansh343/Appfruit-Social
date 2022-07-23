@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import toast from 'react-hot-toast';
 import axios from "axios";
+import { useRouter } from 'next/router';
+
 const Login = () => {
+    const router = useRouter();
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
@@ -35,7 +38,7 @@ const Login = () => {
             const response = await axios.request(reqOptions)
             const { token } = response.data;
             localStorage.setItem('token', token)
-
+            router.push('/admin/dashboard/brands')
             toast.success(`Welcome ${response.data.user.name}`)
             // setEmail("")
             // setPassword("")
