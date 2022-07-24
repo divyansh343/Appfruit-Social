@@ -73,8 +73,7 @@ const InfluencerRegister = () => {
               Join the network
             </h1>
             <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-              The most common questions about how our business works and what
-              can do htmlFor you.
+              We are working with 1000+ influencers in India.
             </p>
           </div>
         </div>

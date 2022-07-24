@@ -48,8 +48,7 @@ const Contact = () => {
                             Let&apos;s connect
                         </h1>
                         <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-                            The most common questions about how our business works and what
-                            can do htmlFor you.
+                            You can probably expect response from our side between 24h.
                         </p>
                     </div>
                 </div>

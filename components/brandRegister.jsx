@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import toast from 'react-hot-toast';
 import axios from "axios";
+import Gallery from './homepage/gallery';
+import WhyInfluencers from './homepage/whyInfluencers';
 const BrandRegister = () => {
     
     const [name, setName] = useState("")
@@ -54,13 +56,13 @@ const BrandRegister = () => {
             <section className="text-gray-700 pt-14 sm:pt-20">
                 <div className="container px-5 pt-5 mx-auto">
                     <div className="text-center mb-20">
-                        <h1 className="font-mono sm:text-3xl text-3xl font-medium text-center title-font text-gray-900 mb-4">
+                        <h1 className="font-medium sm:text-3xl text-5xl  text-center title-font text-gray-900 mb-4">
                             Let&apos;s talk business
                         </h1>
-                        <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+                        {/* <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
                             The most common questions about how our business works and what
                             can do htmlFor you.
-                        </p>
+                        </p> */}
                     </div>
                 </div>
             </section>
@@ -178,6 +180,8 @@ const BrandRegister = () => {
                     </form>
                 </div>
             </div>
+            <WhyInfluencers />
+            <Gallery pagefor="brandPage" />
         </>
     )
 }

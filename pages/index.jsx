@@ -4,6 +4,9 @@ import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import Hero from '../components/homepage/hero'
 import Features from '../components/homepage/features'
+import ConnectSection from '../components/homepage/connectSection'
+import Gallery from '../components/homepage/gallery'
+import WhyInfluencers from '../components/homepage/whyInfluencers'
 export default function Home() {
     return (
         <>
@@ -44,31 +47,35 @@ export default function Home() {
                 </section>
                 <Features />
 
-
                 <section className="w-full bg-white pt-7 pb-7 md:pt-20 md:pb-24">
                     <div className="box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
 
                         <div className="box-border relative w-full max-w-md px-4 mt-5 mb-4 -ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
-                            {/* <Image src="https://cdn.devdojo.com/images/december2020/productivity.png" className="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20 "> */}
+                            <Image
+                                width={550}
+                                height={360}
+                                alt="social media marketing agency theSocialCharts"
+                                src="https://images.unsplash.com/photo-1522204538344-922f76ecc041?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" />
                         </div>
 
                         <div className="box-border order-first w-full text-black border-solid md:w-1/2 md:pl-10 md:order-none">
                             <h2 className="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
-                                Boost Productivity
+                                Automate the process
                             </h2>
-                            <p className="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg">
-                                Build an atmosphere that creates productivity in your organization and your company culture.
+                            <p className="pt-4 pb-8 m-0 leading-7 text-gray-900 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg">
+                                Choose best fit creators with a proven and easy way to amplify your brand
                             </p>
                             <ul className="p-0 m-0 leading-6 border-0 border-gray-300">
-                                <li className="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
-                                    <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"><span className="text-sm font-bold">✓</span></span> Maximize productivity and growth
+                                <li className="box-border relative py-1 pl-0 text-left text-gray-900 border-solid">
+                                    <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-gray-900 bg-yellow-300 rounded-full"><span className="text-sm font-bold">✓</span></span> social media marketing strategy tailored to your needs
                                 </li>
-                                <li className="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
-                                    <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"><span className="text-sm font-bold">✓</span></span> Speed past your competition
+                                <li className="box-border relative py-1 pl-0 text-left text-gray-900 border-solid">
+                                    <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-gray-900 bg-yellow-300 rounded-full"><span className="text-sm font-bold">✓</span></span> quality campaigns to reach their target audience.
                                 </li>
-                                <li className="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
-                                    <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"><span className="text-sm font-bold">✓</span></span> Learn the top techniques
+                                <li className="box-border relative py-1 pl-0 text-left text-gray-900 border-solid">
+                                    <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-gray-900 bg-yellow-300 rounded-full"><span className="text-sm font-bold">✓</span></span> We believe in organic process
                                 </li>
+
                             </ul>
                         </div>
                     </div>
@@ -76,66 +83,40 @@ export default function Home() {
 
                         <div className="box-border w-full text-black border-solid md:w-1/2 md:pl-6 xl:pl-32">
                             <h2 className="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
-                                Automated Tasks
+                                Companies deserve expert social media management.
                             </h2>
-                            <p className="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-10 lg:text-lg">
-                                Save time and money with our revolutionary services. We are the leaders in the industry.
+                            <p className="pt-4 pb-8 m-0 leading-7 text-gray-900 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg">
+                                Social media marketing strategy tailored to your needs, and then execute it with our expertise.d
                             </p>
                             <ul className="p-0 m-0 leading-6 border-0 border-gray-300">
-                                <li className="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
-                                    <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"><span className="text-sm font-bold">✓</span></span> Automated task management workflow
+                                <li className="box-border relative py-1 pl-0 text-left text-gray-900 border-solid">
+                                    <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-gray-900 bg-yellow-300 rounded-full"><span className="text-sm font-bold">✓</span></span> Execute marketing is most critical part of business.
                                 </li>
-                                <li className="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
-                                    <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"><span className="text-sm font-bold">✓</span></span> Detailed analytics for your data
-                                </li>
-                                <li className="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
-                                    <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"><span className="text-sm font-bold">✓</span></span> Some awesome integrations
+                                <li className="box-border relative py-1 pl-0 text-left text-gray-900 border-solid">
+                                    <span className="inline-flex items-center justify-center w-6 h-6 mr-2 text-gray-900 bg-yellow-300 rounded-full"><span className="text-sm font-bold">✓</span></span> We believe in Data & analytics
                                 </li>
                             </ul>
                         </div>
 
                         <div className="box-border relative w-full max-w-md px-4 mt-10 mb-4 text-center bg-no-repeat bg-contain border-solid md:mt-0 md:max-w-none lg:mb-0 md:w-1/2">
-                            {/* <Image src="https://cdn.devdojo.com/images/december2020/settings.png" className="pl-4 sm:pr-10 xl:pl-10 lg:pr-32"> */}
+                            <Image
+                                width={550}
+                                height={360}
+                                alt="social media marketing agency in india"
+                                src="https://images.unsplash.com/photo-1590402494693-bd0499aefe00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" />
                         </div>
                     </div>
                 </section>
 
                 {/* why do you need influencer */}
 
-                <section className="py-20 bg-gray-50">
-                    <div className="container items-center max-w-6xl px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
-                        <div className="flex flex-wrap items-center -mx-3">
-                            <div className="order-1 w-full px-3 lg:w-1/2 lg:order-0">
-                                <div className="w-full lg:max-w-md">
-                                    <h2 className="mb-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl font-heading">Jam-packed with all the tools you need to succeed!</h2>
-                                    <p className="mb-4 font-medium tracking-tight text-gray-400 xl:mb-6">It&apos;s never been easier to build a business of your own. Our tools will help you with the following:</p>
-                                    <ul>
-                                        <li className="flex items-center py-2 space-x-4 xl:py-3">
-                                            <svg className="w-8 h-8 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
-                                            <span className="font-medium text-gray-500">Faster Processing and Delivery</span>
-                                        </li>
-                                        <li className="flex items-center py-2 space-x-4 xl:py-3">
-                                            <svg className="w-8 h-8 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
-                                            <span className="font-medium text-gray-500">Out of the Box Tracking and Monitoring</span>
-                                        </li>
-                                        <li className="flex items-center py-2 space-x-4 xl:py-3">
-                                            <svg className="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                                            <span className="font-medium text-gray-500">100% Protection and Security for Your App</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="w-full px-3 mb-12 lg:w-1/2 order-0 lg:order-1 lg:mb-0">
-                                {/* <Image className="mx-auto sm:max-w-sm lg:max-w-full" src="https://cdn.devdojo.com/images/november2020/feature-graphic.png" alt="feature image"> */}
+                <WhyInfluencers />
 
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <ConnectSection />
 
                 {/* Associated brands */}
 
-                <section className="py-12 sm:py-16 bg-white">
+                {/* <section className="py-12 sm:py-16 bg-white">
                     <div className="max-w-7xl px-10 mx-auto sm:text-center">
                         <p className="text-blue-500 font-medium uppercase">Our Application Integrations</p>
                         <h2 className="font-bold text-3xl sm:text-4xl lg:text-5xl mt-3">Connect with Your Favorite Apps.</h2>
@@ -176,7 +157,7 @@ export default function Home() {
                 <p className="font-bold mt-4">Mailchimp</p>
                 <p className="mt2 text-sm text-gray-500">Email Marketing</p>
             </div> */}
-                            <div className="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
+                {/* <div className="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
                                 <svg className="h-16 w-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 343" fill="none"><path d="M163.818 0H23.736C10.59 0 0 10.663 0 23.736v294.771c0 13.146 10.663 23.737 23.736 23.737H226.19c13.147 0 23.737-10.664 23.737-23.737V85.159h-86.109V0Z" fill="#34A853"></path><path d="M250.001 85.16h-86.182V0l86.182 85.16Z" fill="#188038"></path><path d="M46.89 132.194V245.18h156.149V132.194H46.889Zm136.722 19.354v27.388h-49.08v-27.388h49.08Zm-68.507 0v27.388H66.317v-27.388h48.788Zm-48.788 74.131v-27.388h48.788v27.388H66.317Zm68.215 0v-27.388h49.08v27.388h-49.08Z" fill="#fff"></path></svg>
                                 <p className="font-bold mt-4">Google Sheets</p>
                                 <p className="mt-2 text-sm text-gray-500">Spreadsheet</p>
@@ -184,7 +165,7 @@ export default function Home() {
                         </div>
                         <a href="#_" className="px-8 py-4 sm:w-auto w-full text-center text-base font-medium inline-block rounded text-white hover:bg-blue-600 bg-blue-500">View All Integrations</a>
                     </div>
-                </section>
+                </section>  */}
 
                 {/* What everyone say about us */}
 
@@ -192,10 +173,12 @@ export default function Home() {
                     <div className="max-w-6xl px-12 mx-auto bg-gray-100 md:px-16 xl:px-10">
                         <div className="flex flex-col items-center lg:flex-row">
                             <div className="flex flex-col items-start justify-center w-full h-full pr-8 mb-10 lg:mb-0 lg:w-1/2">
-                                <p className="mb-2 text-base font-medium tracking-tight text-indigo-500 uppercase">Our customers love our product</p>
-                                <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-900 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">Testimonials</h2>
-                                <p className="my-6 text-lg text-gray-600">Don&apos;t just take our word for it, read from our extensive list of case studies and customer testimonials.</p>
-                                <a href="#_" className="flex items-center justify-center px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent shadow hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo md:py-4 md:text-lg md:px-10 rounded">View Case Studies</a>
+                                <p className="mb-2 text-base font-medium tracking-tight text-indigo-500 uppercase">What customers love about us</p>
+                                <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-900 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-3xl">Testimonials</h2>
+                                <p className="my-6 text-lg text-gray-900">Don&apos;t just take our word for it, read from our extensive list of case studies and customer testimonials.</p>
+                                <Link href="/" >
+                                    <a className="flex items-center justify-center px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent shadow hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo md:py-4 md:text-lg md:px-10 rounded">View Case Studies</a>
+                                </Link>
                             </div>
                             <div className="w-full lg:w-1/2">
                                 <blockquote className="flex items-center justify-between w-full col-span-1 p-6 bg-white shadow rounded">
@@ -204,12 +187,12 @@ export default function Home() {
                                             <svg className="absolute left-0 w-10 h-10 text-indigo-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
                                                 <path d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z"></path>
                                             </svg>
-                                            <p className="mt-2 text-sm text-gray-600 sm:text-base lg:text-sm xl:text-base">Awesome product! And the customer service is exceptionally well.</p>
+                                            <p className="mt-2 text-sm text-gray-600 sm:text-base lg:text-sm xl:text-base">We’ve teamed up with the Social charts to create an array of affiliate campaigns. The team is highly agile, and they are always willing to help.⁣⁣</p>
                                         </div>
 
                                         <h3 className="pl-12 mt-3 text-sm font-medium leading-5 text-gray-800 truncate sm:text-base lg:text-sm">
-                                            Jane Cooper
-                                            <span className="mt-1 text-sm leading-5 text-gray-500 truncate">- CEO SomeCompany</span>
+                                            Jayesh dabli
+                                            {/* <span className="mt-1 text-sm leading-5 text-gray-500 truncate">- CEO SomeCompany</span> */}
                                         </h3>
                                     </div>
                                     {/* <Image className="flex-shrink-0 w-20 h-20 bg-gray-300 rounded-full xl:w-24 xl:h-24" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60" alt=""> */}
@@ -220,33 +203,17 @@ export default function Home() {
                                             <svg className="absolute left-0 w-10 h-10 text-indigo-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
                                                 <path d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z"></path>
                                             </svg>
-                                            <p className="mt-2 text-sm text-gray-600 sm:text-base lg:text-sm xl:text-base">I can&apos;t express enough, how amazing this service has been for my company.</p>
+                                            <p className="mt-2 text-sm text-gray-600 sm:text-base lg:text-sm xl:text-base">We know that in this competitive industry, it’s important to work with a partner who understands your goals like The Socail charts</p>
                                         </div>
                                         <h3 className="pl-12 mt-3 text-sm font-medium leading-5 text-gray-800 truncate sm:text-base lg:text-sm">
-                                            John Doe
-                                            <span className="mt-1 text-sm leading-5 text-gray-500 truncate">- CEO SomeCompany</span>
+                                            rimika agarwal
+                                            {/* <span className="mt-1 text-sm leading-5 text-gray-500 truncate">-</span> */}
                                         </h3>
                                         <p className="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
                                     </div>
                                     {/* <Image className="flex-shrink-0 w-24 h-24 bg-gray-300 rounded-full" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;aauto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60" alt=""> */}
                                 </blockquote>
-                                <blockquote className="flex items-center justify-between w-full col-span-1 p-6 mt-4 bg-white shadow rounded">
-                                    <div className="flex flex-col pr-10">
-                                        <div className="relative pl-12">
-                                            <svg className="absolute left-0 w-10 h-10 text-indigo-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
-                                                <path d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z"></path>
-                                            </svg>
-                                            <p className="mt-2 text-sm text-gray-600 sm:text-base lg:text-sm xl:text-base">I can&apos;t express enough, how amazing this service has been for my company.</p>
-                                        </div>
 
-                                        <h3 className="pl-12 mt-3 text-sm font-medium leading-5 text-gray-800 truncate sm:text-base lg:text-sm ">
-                                            John Smith
-                                            <span className="mt-1 text-sm leading-5 text-gray-500 truncate">- CEO SomeCompany</span>
-                                        </h3>
-                                        <p className="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
-                                    </div>
-                                    {/* <Image className="flex-shrink-0 w-24 h-24 bg-gray-300 rounded-full" src="https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rrb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;aauto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60" alt=""> */}
-                                </blockquote>
                             </div>
                         </div>
                     </div>
@@ -262,20 +229,18 @@ export default function Home() {
                             </h1>
                             <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
                                 The most common questions about how our business works and what
-                                can do for you.
+                                can we do for you.
                             </p>
                         </div>
                         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
                             <div className="w-full lg:w-1/2 px-4 py-2">
                                 <details className="mb-4">
                                     <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                                        How Long is this site live?
+                                        How brands Associate with the influencers.
                                     </summary>
 
                                     <span>
-                                        Laboris qui labore cillum culpa in sunt quis sint veniam.
-                                        Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                                        minim velit nostrud pariatur culpa magna in aute.
+                                        Brands usually contact various Influencer marketing agencies/companies like us in India, which are their authorized partners. These companies have tie-ups with top social media influencers from India and abroad across all major plateforms and to involve various niches.
                                     </span>
                                 </details>
                                 <details className="mb-4">
@@ -341,53 +306,8 @@ export default function Home() {
                 </section>
 
                 {/* showoff image gallery */}
-                <div className="container mx-auto px-4">
-
-                    {/* <section className="py-8 px-4">
-                  <div className="flex flex-wrap -mx-4">
-                    <div className="hidden md:block md:w-1/2 px-4">
-                      <div className="h-full w-full bg-cover rounded shadow-md" style="background-image: url('https://source.unsplash.com/random/1280x720')"></div>
-                    </div>
-                    <div className="md:w-1/2 h-auto px-4">
-                      <div className="mb-8"><Image className="rounded shadow-md" src="https://source.unsplash.com/random/1280x720" alt="" /></div>
-                      <div><Image className="rounded shadow-md" src="https://source.unsplash.com/random/1280x720" alt="" /></div>
-                    </div>
-                  </div>
-                </section>
-                          
-                <section className="py-8 px-4">
-                  <div className="flex flex-wrap -mx-4">
-                    <div className="md:w-1/2 px-4 mb-8 md:mb-0"><Image className="rounded shadow-md" src="https://source.unsplash.com/random/1280x720" alt="" /></div>
-                    <div className="md:w-1/2 px-4 mb-8 md:mb-0"><Image className="rounded shadow-md" src="https://source.unsplash.com/random/1280x720" alt="" /></div>
-                  </div>
-                </section> */}
-
-                    <section className="pt-8 px-4">
-                        <div className="flex flex-wrap -mx-4">
-                            <div className="md:w-1/3 px-4 mb-8"><Image className="rounded shadow-md" width={400} height={340} src="https://source.unsplash.com/random/1280x720" alt="" /></div>
-                            <div className="md:w-1/3 px-4 mb-8"><Image className="rounded shadow-md" width={400} height={340} src="https://source.unsplash.com/random/1280x720" alt="" /></div>
-                            <div className="md:w-1/3 px-4 mb-8"><Image className="rounded shadow-md" width={400} height={340} src="https://source.unsplash.com/random/1280x720" alt="" /></div>
-                            <div className="md:w-1/3 px-4 mb-8"><Image className="rounded shadow-md" width={400} height={340} src="https://source.unsplash.com/random/1280x720" alt="" /></div>
-                            <div className="md:w-1/3 px-4 mb-8"><Image className="rounded shadow-md" width={400} height={340} src="https://source.unsplash.com/random/1280x720" alt="" /></div>
-                            <div className="md:w-1/3 px-4 mb-8"><Image className="rounded shadow-md" width={400} height={340} src="https://source.unsplash.com/random/1280x720" alt="" /></div>
-                        </div>
-                    </section>
-
-                    <section className="py-8 px-4">
-                        <div className="flex flex-wrap -mx-4 -mb-8">
-                            <div className="md:w-1/4 px-4 mb-8"><Image className="rounded shadow-md" width={300} height={240} src="https://source.unsplash.com/random/1280x720" alt="" /></div>
-                            <div className="md:w-1/4 px-4 mb-8"><Image className="rounded shadow-md" width={300} height={240} src="https://source.unsplash.com/random/1280x720" alt="" /></div>
-                            <div className="md:w-1/4 px-4 mb-8"><Image className="rounded shadow-md" width={300} height={240} src="https://source.unsplash.com/random/1280x720" alt="" /></div>
-                            <div className="md:w-1/4 px-4 mb-8"><Image className="rounded shadow-md" width={300} height={240} src="https://source.unsplash.com/random/1280x720" alt="" /></div>
-                            <div className="md:w-1/4 px-4 mb-8"><Image className="rounded shadow-md" width={300} height={240} src="https://source.unsplash.com/random/1280x720" alt="" /></div>
-                            <div className="md:w-1/4 px-4 mb-8"><Image className="rounded shadow-md" width={300} height={240} src="https://source.unsplash.com/random/1280x720" alt="" /></div>
-                            <div className="md:w-1/4 px-4 mb-8"><Image className="rounded shadow-md" width={300} height={240} src="https://source.unsplash.com/random/1280x720" alt="" /></div>
-                            <div className="md:w-1/4 px-4 mb-8"><Image className="rounded shadow-md" width={300} height={240} src="https://source.unsplash.com/random/1280x720" alt="" /></div>
-                        </div>
-                    </section>
-                </div>
+                <Gallery />
             </div>
         </>
     )
 }
-
