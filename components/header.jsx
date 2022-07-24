@@ -10,7 +10,7 @@ const getToken = () => {
 }
 const Header = () => {
   const router = useRouter()
-  const[token, settoken] = useState(false)
+  const [token, settoken] = useState(false)
 
   useEffect(() => {
     settoken(getToken())
@@ -29,23 +29,32 @@ const Header = () => {
   return (
     <>
       <header className="fixed w-full navbar">
-        <nav className="bg-yellow-400  py-2.5 dark:bg-gray-900">
+        <nav className="bg-purple-100  py-2.5 dark:bg-gray-900">
           <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
             <Link href="/" >
               <a className="flex items-center">
                 {/* <Image src="https://demo.themesberg.com/landwind/images/logo.svg" className="h-6 mr-3 sm:h-9" alt="Landwind Logo" /> */}
-                <span className="self-center text-l font-semibold whitespace-nowrap hover:border-b-1 bor  dark:text-white font-mono">TheSocialCHARTS.com</span>
+                <span className="self-center text-l font-semibold whitespace-nowrap hover:border-b-1 bor  dark:text-whit">TheSocialCHARTS</span>
               </a>
             </Link>
-            <div className="flex items-center lg:order-2">
 
-              <a href="#" target="_blank"
-                className="text-white bg-purple-700 font-mono hover:bg-blue-900 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Download</a>
+            <div className="flex items-center lg:order-2">
+              <Link href="/brands">
+                <a href="#" className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                  Get started
+                  <svg className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
+                </a>
+              </Link>
+              {/* <Link href="/brands">
+                <a
+                  className="text-white bg-purple-700 font-mono hover:bg-blue-900 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800" >Get Started
+                </a>
+              </Link> */}
               {
                 token &&
                 <a
                   onClick={logOutUser}
-                  className="mx-1 text-white bg-purple-700 font-mono hover:bg-blue-900 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">logout</a>
+                  className="mx-3 text-white bg-red-700 font-mono hover:bg-red-900 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">logout</a>
               }
 
               <button data-collapse-toggle="mobile-menu-2" type="button" className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
@@ -82,7 +91,7 @@ const Header = () => {
                       className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
                   </Link>
                 </li>
-                
+
                 {token &&
                   <li>
                     <Link href="/admin/dashboard">

@@ -19,7 +19,7 @@ const Page = () => {
                     Welcome admin, user
                 </h2>
                 <div className="grid gap-8 md:grid-rows-2 lg:grid-cols-2">
-                    <Link href="/admin/dashboard/influencer">
+                    <Link href="/admin/dashboard/brands">
                     <a >
                     <div className="row-span-2 p-6 border border-black rounded-xl bg-gray-50 text-center sm:p-8">
                         <div className="h-full flex flex-col justify-center space-y-4">
@@ -33,9 +33,9 @@ const Page = () => {
                     </a>
                     </Link>
 
-                    <Link href="/admin/dashboard/brands">
+                    <Link href="/admin/dashboard/influencer">
                     <a >
-                    <div className="border-black p-6 border border-gray-100 rounded-xl bg-gray-50 sm:flex sm:space-x-8 sm:p-8">
+                    <div className="border-black p-6 border rounded-xl bg-gray-50 sm:flex sm:space-x-8 sm:p-8">
                         <div className="space-y-4 mt-4 text-center sm:mt-0 sm:text-left">
                             <p className="text-gray-600 sm:2xl md:text-2xl"> Registerd influencers</p>
                             <div>
@@ -49,7 +49,7 @@ const Page = () => {
 
                     <Link href="/admin/dashboard/contacts">
                     <a >
-                    <div className="border-black p-6 border border-gray-100 rounded-xl bg-gray-50 sm:flex sm:space-x-8 sm:p-8">
+                    <div className="border-black p-6 border rounded-xl bg-gray-50 sm:flex sm:space-x-8 sm:p-8">
                         <div className="space-y-4 mt-4 text-center sm:mt-0 sm:text-left">
                             <p className="text-gray-600 sm:2xl md:text-2xl">Contacts feed</p>
                             <div>
