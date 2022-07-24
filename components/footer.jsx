@@ -88,6 +88,9 @@ const Footer = () => {
                                 <em>Get started with us.</em></p>
                         </div>
                         <div className="px-4 sm:w-1/2 md:w-1/4 mt-4 md:mt-0">
+                            <Link href='/contact'>
+                            <h6 className="font-bold mb-2 text-red-900">Contact us </h6>
+                            </Link>
                             <h6 className="font-bold mb-2">Address</h6>
                             <address className="not-italic mb-4 text-sm">
                                 B-4 6th St.<br />
@@ -97,7 +100,12 @@ const Footer = () => {
                         <div className="px-4 sm:w-1/2 md:w-1/3 mt-4 md:mt-0">
                             <h6 className="font-bold mb-2">Made with Code & Coffee&apos;</h6>
                             <p className="mb-4 text-sm">theSocialCharts is designed by <strong><a className='font-mono' target="_blank" rel="noreferrer" href="https://divyanshpal.vercel.app/">@divyanshPal</a></strong>.<br />
-                                <em>All are MIT License</em></p>
+                                {/* <em> */}
+                                    <Link href="/admin/login">
+                                    <a className='leading-2 text-red-900 border border-b-gray-900'>Admin view</a>
+                                    </Link>
+                                {/* </em> */}
+                                </p>
                         </div>
                         <div className="px-4 md:w-1/4 md:ml-auto mt-6 sm:mt-4 md:mt-0">
                             <Link href="/" >
