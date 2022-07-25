@@ -29,7 +29,6 @@ const Page = () => {
         const response = await axios.request(reqOptions)
         setCount(response.data.count)
         setcontacts(response.data.influencer.reverse())
-        console.log(response)
       } catch (error) {
         toast.error("you are not authorizied");
   

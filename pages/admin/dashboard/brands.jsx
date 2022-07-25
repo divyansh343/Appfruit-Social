@@ -26,7 +26,6 @@ const Page = () => {
       const response = await axios.request(reqOptions)
       setCount(response.data.count)
       setbrands(response.data.brand.reverse())
-      console.log(response)
     } catch (error) {
       toast.error("you are not authorizied");
 
