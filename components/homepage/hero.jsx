@@ -12,7 +12,9 @@ const Hero = () => {
                             <h1 className="max-w-2xl mb-4 tracking-normal leading-2 text-4xl font-extrabold  md:text-5xl xl:text-6xl dark:text-white last-of-type:">Your marketing companion, your Brands meets with Your Targets.</h1>
                             <p className="max-w-2xl mb-6 font-light text-4xl text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Driving profits to your door.</p>
                             <Link href="/influencer">
-                                <a href="#" className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-semibold text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                                <a className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base 
+                                
+                                font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
                                     For influencers
                                 </a>
                             </Link>
