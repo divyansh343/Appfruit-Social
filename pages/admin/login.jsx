@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import toast from 'react-hot-toast';
 import axios from "axios";
 import { useRouter } from 'next/router';
@@ -7,6 +7,12 @@ const Login = () => {
     const router = useRouter();
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+
+    useEffect(() => {
+        if (localStorage.getItem('token') !== null) {
+            router.push('/admin/dashboard')
+          }
+    }, [router])
 
     const signInUser = async (e) => {
         e.preventDefault();
@@ -40,8 +46,8 @@ const Login = () => {
             localStorage.setItem('token', token)
             router.push('/admin/dashboard')
             toast.success(`Welcome ${response.data.user.name}`)
-            // setEmail("")
-            // setPassword("")
+            setEmail("")
+            setPassword("")
         } catch (error) {
             toast.error("Wrong email & Password");
         }

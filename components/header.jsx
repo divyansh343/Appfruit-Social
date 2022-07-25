@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
-
+import toast from 'react-hot-toast';
 
 const getToken = () => {
   const tok = localStorage.getItem('token')
@@ -18,12 +18,12 @@ const Header = () => {
 
   const logOutUser = () => {
     if (localStorage.getItem('token') === null) {
-      console.log({ message: "user alredy logged Out" });
+      toast("user alredy logged Out");
     }
     const token = localStorage.clear();
     settoken(false)
     router.push('/')
-    console.log({ message: "user logged Out" });
+    toast.success("user logged Out");
   }
 
   return (
