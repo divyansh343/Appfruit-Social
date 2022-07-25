@@ -43,11 +43,11 @@ const Header = () => {
                     className="h-6 mr-3 sm:h-9" alt="theSocialCharts"
                   />
                 </span>
-                <div className='invisible hidden lg:visible lg:inline-block'>
+                {/* <div className='invisible hidden lg:visible lg:inline-block'> */}
                   <span className="pl-2 self-center text-3xl tracking-3 font-semibold whitespace-nowrap  hover:border-b-1 dark:text-white sm:text-lg">
                     The Social Charts.
                   </span>
-                </div>
+                {/* </div> */}
               </a>
             </Link>
 
