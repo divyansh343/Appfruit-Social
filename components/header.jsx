@@ -44,7 +44,7 @@ const Header = () => {
                   />
                 </span>
                 {/* <div className='invisible hidden lg:visible lg:inline-block'> */}
-                  <span className="pl-2 self-center text-3xl tracking-3 font-semibold whitespace-nowrap  hover:border-b-1 dark:text-white sm:text-lg">
+                  <span className="pl-2 self-center text-xl tracking-3 font-semibold whitespace-nowrap  hover:border-b-1 dark:text-white lg:text-xl">
                     The Social Charts.
                   </span>
                 {/* </div> */}
