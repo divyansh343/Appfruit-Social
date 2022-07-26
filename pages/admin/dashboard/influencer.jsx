@@ -4,6 +4,7 @@ import toast from 'react-hot-toast';
 import axios from "axios";
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { exportToCsv } from '../../../utils/csv';
 
 const Page = () => {
   const router = useRouter();
@@ -52,6 +53,9 @@ const Page = () => {
               
               <th className=" font-thin text-sm px-7 py-3">registerd influencers</th>
               <th className="text-xs px-4 py-1">total influencers : {count}</th>
+              <th type="button" className=" px-4 py-1 text-base text-purple-800">
+                  <button className='my-3' onClick={() => exportToCsv(contacts, "influencers.csv")}>Download csv</button>
+                </th>
               </tr>
             </thead>
             <thead>

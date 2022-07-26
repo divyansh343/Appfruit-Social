@@ -4,6 +4,7 @@ import Layout from '../../../components/layout'
 import toast from 'react-hot-toast';
 import axios from "axios";
 import { useRouter } from 'next/router';
+import { exportToCsv } from '../../../utils/csv';
 
 const Page = () => {
   const router = useRouter();
@@ -13,28 +14,28 @@ const Page = () => {
   const getAllContacts = async () => {
     const token = localStorage.getItem('token');
     let headersList = {
-        "Accept": "*/*",
-        "Content-Type": "application/json",
-        "Authorization": `Bearer ${token}` 
-       }
-       
-       let reqOptions = {
-         url: "https://infmark.herokuapp.com/api/v1/dashboard/contacts",
-         method: "GET",
-         headers: headersList,
-       }
-       
-       try {
-        const response = await axios.request(reqOptions)
-        setCount(response.data.count)
-        setbrands(response.data.contact.reverse())
-      } catch (error) {
-        toast.error("you are not authorizied");
-      }
-}
+      "Accept": "*/*",
+      "Content-Type": "application/json",
+      "Authorization": `Bearer ${token}`
+    }
+
+    let reqOptions = {
+      url: "https://infmark.herokuapp.com/api/v1/dashboard/contacts",
+      method: "GET",
+      headers: headersList,
+    }
+
+    try {
+      const response = await axios.request(reqOptions)
+      setCount(response.data.count)
+      setbrands(response.data.contact.reverse())
+    } catch (error) {
+      toast.error("you are not authorizied");
+    }
+  }
 
   useEffect(() => {
-    if (localStorage.getItem('token')=== null) {
+    if (localStorage.getItem('token') === null) {
       router.push('/')
     }
     getAllContacts()
@@ -44,16 +45,22 @@ const Page = () => {
     <section className="container mx-auto pt-20 p-4 font-mono">
       <div className="w-full mb-8 overflow-hidden rounded-lg shadow-lg">
         <div className="w-full overflow-x-auto">
+          {/* <div>
+            <button onClick={handleCsvExport} >csv</button>
+          </div> */}
           <table className="w-full">
             <thead>
               <tr className="text-md font-semibold tracking-wide text-left text-gray-900 bg-gray-100 uppercase border-b border-gray-600">
-              <th className=" font-thin text-sm px-7 py-3">contact requests</th>
-              <th className="text-xs px-4 py-1">total brands : {count}</th>
+                <th className=" font-thin text-sm px-7 py-3">contact requests</th>
+                <th className="text-xs px-4 py-1">total brands : {count}</th>
+                <th type="button" className=" px-4 py-1 text-base text-purple-800">
+                  <button className='my-4' onClick={() => exportToCsv(brands, "contacts.csv")}>Download csv</button>
+                </th>
               </tr>
             </thead>
             <thead>
               <tr className="text-md font-semibold tracking-wide text-left text-gray-900 bg-gray-100 uppercase border-b border-gray-600">
-                <th className="px-4 py-3">Name/Brand name</th>
+                <th className="px-4 py-3">Name</th>
                 <th className="px-4 py-3">Email</th>
                 <th className="px-4 py-3">Phone</th>
                 <th className="px-4 py-3">Description</th>

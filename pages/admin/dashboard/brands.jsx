@@ -3,6 +3,7 @@ import Layout from '../../../components/layout'
 import toast from 'react-hot-toast';
 import axios from "axios";
 import { useRouter } from 'next/router';
+import { exportToCsv } from '../../../utils/csv';
 
 const Page = () => {
   const router = useRouter();
@@ -47,6 +48,9 @@ const Page = () => {
               <tr className="text-md font-semibold tracking-wide text-left text-gray-900 bg-gray-100 uppercase border-b border-gray-600">
               <th className=" font-thin text-sm px-7 py-3">registerd Brands</th>
               <th className="text-xs px-4 py-1">total brands : {count}</th>
+              <th type="button" className=" px-4 py-1 text-base text-purple-800">
+                  <button className='my-4' onClick={() => exportToCsv(brands, "brands.csv")}>Download csv</button>
+                </th>
               </tr>
             </thead>
             <thead>
