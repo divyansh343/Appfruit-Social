@@ -26,7 +26,7 @@ const Page = () => {
                             <p className="text-gray-600 md:text-2xl"> Registerd Brands </p>
                             <div>
                                 <h6 className="text-lg font-semibold leading-none">The Social Charts</h6>
-                                <span className="text-xs text-gray-500">Product Designer</span>
+                                 
                             </div>
                         </div>
                     </div>
@@ -40,7 +40,7 @@ const Page = () => {
                             <p className="text-gray-600 sm:2xl md:text-2xl"> Registerd influencers</p>
                             <div>
                                 <h6 className="text-lg font-semibold leading-none ">The Social Charts</h6>
-                                <span className="text-xs text-gray-500">Product Designer</span>
+                                 
                             </div>
                         </div>
                     </div>
@@ -54,7 +54,6 @@ const Page = () => {
                             <p className="text-gray-600 sm:2xl md:text-2xl">Contacts feed</p>
                             <div>
                                 <h6 className="text-lg font-semibold leading-none ">The Social Charts</h6>
-                                <span className="text-xs text-gray-500">Product Designer</span>
                             </div>
                         </div>
                     </div>
