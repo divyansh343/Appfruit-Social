@@ -109,7 +109,7 @@ const Gallery = ({ pagefor }) => {
 </section> */}
 
                 {
-                    !pagefor &&
+                    !pagefor === "brandPage" &&
                     <section className="pt-8 px-4">
                         <div className="flex flex-wrap -mx-4">
                             {medGallery.map(item => (
@@ -121,6 +121,8 @@ const Gallery = ({ pagefor }) => {
                         </div>
                     </section>
                 }
+                {/* { pagefor === "homePage" ? */}
+                {/* <></> : */}
                 <section className="py-8 px-4">
                     <div className="flex flex-wrap -mx-4 -mb-8">
                         {smGallery.map(item => (
@@ -128,8 +130,9 @@ const Gallery = ({ pagefor }) => {
                                 <div id={item.url} className="md:w-1/4 px-4 mb-8"><Image className="rounded shadow-md" width={300} height={240} src={item.url} alt={item.alt} /></div>
                             </>
                         ))}
-                    </div>
+                </div>
                 </section>
+                {/* } */}
             </div>
         </>
     )
