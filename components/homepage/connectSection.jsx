@@ -66,9 +66,9 @@ const ConnectSection = () => {
                                             The Social Charts</span> is India’s leading influencer marketing platform, connecting brands to social media influencers to tell extraordinary stories. We help visionary marketers unearth new talents and collaborate with creators, bloggers, social media influencers, Meme world and passionate fans of their brand.
 
                                     </p>
-                                    <p className=" text-xl text-body-color leading-relaxed mb-9 mx-5">
+                                    {/* <p className=" text-xl text-body-color leading-relaxed mb-9 mx-5">
                                         You get the opportunity to work with rising stars who shape the industry globally with their platform and influence. When we connect you with these changemakers, we ensure that your brand is given the platform and attention it deserves to thrive.
-                                    </p>
+                                    </p> */}
 
 
 

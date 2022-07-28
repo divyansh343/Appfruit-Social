@@ -98,18 +98,18 @@ const Footer = () => {
                             </address>
                         </div>
                         <div className="px-4 sm:w-1/2 md:w-1/3 mt-4 md:mt-0">
-                            <h6 className="font-bold mb-2">Made with Code & Coffee&apos;</h6>
-                            <p className="mb-4 text-sm">theSocialCharts is designed by <strong><a className='font-mono' target="_blank" rel="noreferrer" href="https://divyanshpal.vercel.app/">@divyanshPal</a></strong>.<br />
-                                {/* <em> */}
+                            <h6 className="text-sm mb-2">© 2022 - theSocialCharts All Right Reserved</h6>
+                            <p className="mb-4 text-sm">created by <strong><a className='font-mono border-b border-black' target="_blank" rel="noreferrer" href="https://divyanshpal.vercel.app/">@divyanshPal</a></strong>.<br />
+                                {/* <em>
                                     <Link href="/admin/login">
                                     <a className='leading-2 text-red-900 border border-b-gray-900'>Admin view</a>
                                     </Link>
-                                {/* </em> */}
+                                </em> */}
                                 </p>
                         </div>
                         <div className="px-4 md:w-1/4 md:ml-auto mt-6 sm:mt-4 md:mt-0">
                             <Link href="/" >
-                            <a className="px-4 py-2 bg-purple-800 hover:bg-purple-900 rounded text-white">Back to Top</a>
+                            <a className="text-sm border-b border-black hover:text-purple-900  text-black">Back to Top</a>
                             </Link>
                         </div>
                     </div>
