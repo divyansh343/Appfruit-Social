@@ -29,7 +29,8 @@ const Header = () => {
   return (
     <>
       <header className="fixed w-full navbar">
-        <nav className="bg-purple-100  py-2.5 dark:bg-gray-900">
+        <nav className="bg-white
+         py-2.5 dark:bg-gray-900">
           <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
             <Link href="/" >
               <a className="flex items-center">

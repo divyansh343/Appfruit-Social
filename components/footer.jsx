@@ -91,6 +91,9 @@ const Footer = () => {
                             <Link href='/contact'>
                             <h6 className="font-bold mb-2 text-red-900">Contact us </h6>
                             </Link>
+                            <address className="not-italic mb-4 text-sm">
+                            <a className='text-sm border-b border-black hover:text-purple-900  text-black' href="mailto:hello@thesocialcharts.com">hello@thesocialcharts.com</a>
+                            </address>
                             <h6 className="font-bold mb-2">Address</h6>
                             <address className="not-italic mb-4 text-sm">
                                 B-4 6th St.<br />
@@ -99,13 +102,9 @@ const Footer = () => {
                         </div>
                         <div className="px-4 sm:w-1/2 md:w-1/3 mt-4 md:mt-0">
                             <h6 className="text-sm mb-2">© 2022 - theSocialCharts All Right Reserved</h6>
-                            <p className="mb-4 text-sm">created by <strong><a className='font-mono border-b border-black' target="_blank" rel="noreferrer" href="https://divyanshpal.vercel.app/">@divyanshPal</a></strong>.<br />
-                                {/* <em>
-                                    <Link href="/admin/login">
-                                    <a className='leading-2 text-red-900 border border-b-gray-900'>Admin view</a>
-                                    </Link>
-                                </em> */}
-                                </p>
+                            {/* <p className="mb-4 text-sm">created by <strong><a className='font-mono border-b border-black' target="_blank" rel="noreferrer" href="https://divyanshpal.vercel.app/">@divyanshPal</a></strong>.<br />
+                                
+                                </p> */}
                         </div>
                         <div className="px-4 md:w-1/4 md:ml-auto mt-6 sm:mt-4 md:mt-0">
                             <Link href="/" >
