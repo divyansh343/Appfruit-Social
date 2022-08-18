@@ -41,100 +41,75 @@ const Contact = () => {
     }
     return (
         <>
-            <section className="text-gray-700 pt-14 sm:pt-20">
-                <div className="container px-5 pt-5 mx-auto">
-                    <div className="text-center mb-20">
-                        <h1 className="font-mono sm:text-3xl text-3xl font-medium text-center title-font text-gray-900 mb-4">
-                            Let&apos;s connect
-                        </h1>
-                        <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-                            You can probably expect response from our side between 24h.
-                        </p>
+
+            <div className="bg-white sm:mx-32 lg:mx-32 py-20 xl:mx-72 ">
+                <div className="flex justify-between container mx-auto">
+                    <div className="w-full">
+                        <div className="mt-4 px-4">
+                            {/* <h1 className="text-3xl font-semibold py-7 px-5">addbyme</h1> */}
+                            <h1 className="font-thinner flex text-4xl pt-10 px-5">Contact With Us
+                            </h1>
+                            <form onSubmit={handleContact} className="mx-5 my-5">
+
+                                <label className="relative block p-3 border-2 border-black rounded" htmlFor="name">
+                                    <span className="text-md font-semibold text-zinc-900" htmlFor="name">
+                                        Name
+                                    </span>
+                                    <input 
+                                    onChange={e => setName(e.target.value)}
+                                    value={name}
+                                    className="w-full bg-transparent p-0 text-sm  text-gray-500 focus:outline-none" id="name" type="text" placeholder="Your name" />
+                                </label>
+
+                                <label className="relative block p-3 border-2 my-3 border-black rounded" htmlFor="email">
+                                    <span className="text-md font-semibold text-zinc-900" htmlFor="name">
+                                        Email
+                                    </span>
+                                    <input
+                                    onChange={e => setEmail(e.target.value)}
+                                    value={email}
+                                    className="w-full bg-transparent p-0 text-sm  text-gray-500 focus:outline-none" id="email" type="email" placeholder="Your email" />
+                                </label>
+
+                                <label className="relative block p-3 border-2 my-3 border-black rounded" htmlFor="phone">
+                                    <span className="text-md font-semibold text-zinc-900" htmlFor="name">
+                                        Phone
+                                    </span>
+                                    <input 
+                                    onChange={e => setPhone(e.target.value)}
+                                    value={phone}
+                                    className="w-full bg-transparent p-0 text-sm  text-gray-500 focus:outline-none" id="phone" type="text" placeholder="Your contact no." />
+                                </label>
+
+                                <label className="relative block p-3 border-2 my-4 border-black rounded" htmlFor="description">
+                                    <span className="text-md font-semibold text-zinc-900" htmlFor="description">
+                                        How we can help you
+                                    </span>
+                                    <textarea
+                                    onChange={e => setDescription(e.target.value)}
+                                    value={description}
+                                    className="w-full bg-transparent p-0 text-sm h-32  text-gray-500 focus:outline-none" id="description" type="text" placeholder="Type your message here." />
+                                </label>
+
+                                {/* <h1 className="text-2xl font-semibold mt-5">Category :</h1>
+                                <p className="text-black text-sm font-normal flex gap gap-2 pt-2">
+                                    <button className="border-2 border-black rounded-md border-b-4 border-l-4 font-black px-2">Business</button>
+                                    <button className="border-2 border-black rounded-md border-b-4 border-l-4 font-black px-2">Creative</button>
+                                    <button className="border-2 border-black rounded-md border-b-4 border-l-4 font-black px-2">Education</button>
+                                </p>
+
+                                <p className="text-black text-sm font-normal flex gap gap-2 pt-2">
+                                    <button className="border-2 border-black rounded-md border-b-4 border-l-4 font-black px-2">Tech</button>
+                                    <button className="border-2 border-black rounded-md border-b-4 border-l-4 font-black px-2">Entertainment</button>
+                                    <button className="border-2 border-black rounded-md border-b-4 border-l-4 font-black px-2">Other</button>
+                                </p> */}
+
+                                <button type="submit" className="mt-5 border-2 px-5 py-2 rounded-lg border-black border-b-4 font-black translate-y-2 border-l-4">
+                                    Submit
+                                </button>
+                            </form>
+                        </div>
                     </div>
-                </div>
-            </section>
-
-            <div className="flex items-center justify-center p-2 mb-10">
-                <div className="mx-auto w-full max-w-[550px]">
-                    <form onSubmit={handleContact} >
-                        <div className="mb-5">
-                            <label
-                                htmlFor="name"
-                                className="mb-3 block text-base font-medium text-[#07074D]"
-                            >
-                                Name
-                            </label>
-                            <input
-                                aria-required
-                                onChange={e => setName(e.target.value)}
-                                value={name}
-                                type="text"
-                                name="name"
-                                id="name"
-                                placeholder="Name"
-                                className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                            />
-                        </div>
-
-                        <div className="mb-5">
-                            <label
-                                htmlFor="email"
-                                className="mb-3 block text-base font-medium text-[#07074D]"
-                            >
-                                Email Address
-                            </label>
-                            <input
-                                aria-required
-                                onChange={e => setEmail(e.target.value)}
-                                value={email}
-                                type="email"
-                                name="email"
-                                id="email"
-                                placeholder="example@domain.com"
-                                className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                            />
-                        </div>
-                        <div className="mb-5">
-                            <label
-                                htmlFor="phone"
-                                className="mb-3 block text-base font-medium text-[#07074D]"
-                            >
-                                Phone
-                            </label>
-                            <input
-                                aria-required
-                                onChange={e => setPhone(e.target.value)}
-                                value={phone}
-                                type="text"
-                                name="phone"
-                                id="phone"
-                                placeholder="Phone"
-                                className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                            />
-                        </div>
-                        <div className="mb-5">
-                            <label
-                                htmlFor="message"
-                                className="mb-3 block text-base font-medium text-[#07074D]"
-                            >
-                                How can we help you?
-                            </label>
-                            <textarea
-                                onChange={e => setDescription(e.target.value)}
-                                value={description}
-                                rows="4"
-                                name="description"
-                                id="description"
-                                placeholder="Type your message"
-                                className="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                            ></textarea>
-                        </div>
-                        <div>
-                            <button
-                            type='submit'
-                                className="text-white bg-purple-700 font-mono hover:bg-blue-900 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Submit</button>
-                        </div>
-                    </form>
                 </div>
             </div>
         </>
