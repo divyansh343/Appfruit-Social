@@ -5,34 +5,46 @@ import Image from 'next/image'
 const Hero = () => {
     return (
         <>
+            <div className="py-16  bg-white">
+                <div className="container mt-24 m-auto px-6 space-y-8 text-gray-500 md:px-12 lg:px-20">
+                    <div className="justify-center text-center gap-6 md:text-left md:flex lg:items-center  lg:gap-16">
+                        <div className="order-last mb-6 space-y-6 md:mb-0 md:w-6/12 lg:w-6/12">
+                            <h1 className="text-4xl text-gray-900 font-bold md:text-5xl">Your brands meet your targets as your <span className="text-blue-600">marketing companion.</span></h1>
+                            <p className="text-lg">Increase brand awareness using our interesting influences. to provide you with the <span className="text-blue-600">Finest ROI</span></p>
+                            <div className="flex flex-row-reverse flex-wrap justify-center gap-4 md:gap-6 md:justify-end">
 
-<section className="bg-purple-200 dark:bg-gray-900 pt-7">
-                    <div className="pl-10 grid max-w-screen-xl px-4 pt-32 pb-4 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 ">
-                        <div className="mr-auto place-self-center lg:col-span-7">
-                            <h1 className="max-w-2xl mb-4 tracking-normal leading-2 text-4xl font-extrabold  md:text-5xl xl:text-6xl dark:text-white last-of-type:">Your marketing companion, your Brands meets with Your Targets.</h1>
-                            <p className="max-w-2xl mb-6 font-light text-4xl text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Driving profits to your door.</p>
-                            <Link href="/influencer">
-                                <a className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base 
-                                
-                                font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-                                    For influencers
-                                </a>
-                            </Link>
-                            <Link href="/brands">
-                                <a className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base 
-                                
-                                font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-                                    Brands /Agency
-                                    <svg className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
-                                </a>
-                            </Link>
+                                <Link href="/influencer">
+                                <button type="button" title="more about" className="w-full order-first py-3 px-6 text-center rounded-xl bg-blue-700 transition hover:bg-red-600 active:bg-gray-300 focus:bg-gray-200 sm:w-max">
+                                        <span className="block text-white ">
+                                            For Influencers
+                                        </span>
+                                    </button>
+                                </Link>
+
+
+                                <Link href="/brands">
+                                    <button type="button" title="more about" className="w-full order-first py-3 px-6 text-center rounded-xl bg-blue-700 transition hover:bg-red-600 active:bg-gray-300 focus:bg-gray-200 sm:w-max">
+                                        <span className="block text-white ">
+                                            For Brands / Agency
+                                        </span>
+                                    </button>
+                                </Link>
+                            </div>
                         </div>
-                        <div className="hidden overflow-hidden lg:mt-0 lg:col-span-5 lg:flex">
-                            <Image src="https://images.unsplash.com/photo-1658120461867-9c9279a06d50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIwfHRvd0paRnNrcEdnfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60" alt="mockup" width={350} height={440} />
+                        <div className="grid grid-cols-5 grid-rows-4 gap-4 md:w-5/12 lg:w-6/12">
+                            <div className="col-span-2 row-span-4">
+                                <Image src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" className="rounded-full" width="640" height="960" alt="thesocialcharts" loading="lazy" />
+                            </div>
+                            <div className="col-span-2 row-span-2">
+                                <Image src="https://images.unsplash.com/photo-1599824701954-d1d141704de9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" className="w-full h-full object-cover object-top rounded-xl" width="640" height="640"  loading="lazy" alt="thesocialcharts" />
+                            </div>
+                            <div className="col-span-3 row-span-3">
+                                <Image src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fG9mZmljZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" className="w-full h-full object-cover object-top rounded-xl" width="640" height="427" alt="thesocialcharts" loading="lazy" />
+                            </div>
                         </div>
                     </div>
-                </section>
-
+                </div>
+            </div>
         </>
 
 
