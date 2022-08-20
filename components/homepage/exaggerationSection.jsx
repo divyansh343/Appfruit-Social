@@ -9,7 +9,7 @@ const ExaggerationSection = () => {
                         </div>
                         <div className="grid gap-12 items-center md:grid-cols-3">
                             <div className="space-y-4 text-center">
-                                <Image class="w-64 h-64 mx-auto object-cover rounded-xl md:w-40 md:h-40 lg:w-64 lg:h-64"
+                                <Image className="w-64 h-64 mx-auto object-cover rounded-xl md:w-40 md:h-40 lg:w-64 lg:h-64"
                                     src="https://wp.missmalini.com/wp-content/uploads/2020/04/Untitled-collage-1-3.jpg" alt="woman" loading="lazy" width="640" height="805" />
                                 <div>
                                     <h4 className="text-2xl">Mahesh keshwala</h4>
@@ -17,7 +17,7 @@ const ExaggerationSection = () => {
                                 </div>
                             </div>
                             <div className="space-y-4 text-center">
-                                <Image class="w-64 h-64 mx-auto object-cover rounded-xl md:w-48 md:h-64 lg:w-64 lg:h-80"
+                                <Image className="w-64 h-64 mx-auto object-cover rounded-xl md:w-48 md:h-64 lg:w-64 lg:h-80"
                                     src="https://dhruvrathee.com/images/dr-vlogs.jpg" alt="dhurv rathee" loading="lazy" width="640" height="805" />
                                 <div>
                                     <h4 className="text-2xl">Dhurv rathee</h4>
@@ -25,7 +25,7 @@ const ExaggerationSection = () => {
                                 </div>
                             </div>
                             <div className="space-y-4 text-center">
-                                <Image class="w-64 h-64 mx-auto object-cover rounded-xl md:w-48 md:h-64 lg:w-64 lg:h-80"
+                                <Image className="w-64 h-64 mx-auto object-cover rounded-xl md:w-48 md:h-64 lg:w-64 lg:h-80"
                                     src="https://im.rediff.com/movies/2021/jun/09prajakta3.jpg?w=670&h=900" alt="dhurv rathee" loading="lazy" width="640" height="805" />
                                 <div>
                                     <h4 className="text-2xl">Prajakta Koli</h4>
