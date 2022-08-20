@@ -3,6 +3,7 @@ import toast from 'react-hot-toast';
 import axios from "axios";
 import Gallery from './homepage/gallery';
 import WhyInfluencers from './homepage/whyInfluencers';
+import ExaggerationSection from './homepage/exaggerationSection';
 const BrandRegister = () => {
     
     const [name, setName] = useState("")
@@ -37,7 +38,6 @@ const BrandRegister = () => {
         }
 
         try {
-            
             const response = await axios.request(reqOptions)
             toast.success(response.data.message)
             setName("")
@@ -53,21 +53,7 @@ const BrandRegister = () => {
 
     return (
         <>
-            <section className="text-gray-700 pt-14 sm:pt-20">
-                <div className="container px-5 pt-5 mx-auto">
-                    <div className="text-center mb-20">
-                        <h1 className="font-medium sm:text-3xl text-5xl  text-center title-font text-gray-900 mb-4">
-                            Let&apos;s talk business
-                        </h1>
-                        {/* <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-                            The most common questions about how our business works and what
-                            can do htmlFor you.
-                        </p> */}
-                    </div>
-                </div>
-            </section>
-
-            <div className="flex items-center justify-center p-2 mb-10">
+            {/* <div className="flex items-center justify-center p-2 mb-10">
                 <div className="mx-auto w-full max-w-[550px]">
                     <form onSubmit={handleBrand}>
                         <div className="mb-5">
@@ -179,9 +165,87 @@ const BrandRegister = () => {
                         </div>
                     </form>
                 </div>
+            </div> */}
+            <div className="bg-white sm:mx-32 lg:mx-32 py-20 xl:mx-72 ">
+                <div className="flex justify-between container mx-auto">
+                    <div className="w-full">
+                        <div className="mt-4 px-4">
+                            {/* <h1 className="text-3xl font-semibold py-7 px-5">addbyme</h1> */}
+                            <h1 className="font-thinner flex text-4xl pt-10 px-5">Let&apos;s talk business
+                            </h1>
+                            <form onSubmit={handleBrand} className="mx-5 my-5">
+
+                                <label className="relative block p-3 border-2 border-black rounded" htmlFor="name">
+                                    <span className="text-md font-semibold text-zinc-900" htmlFor="name">
+                                        Name
+                                    </span>
+                                    <input 
+                                    onChange={e => setName(e.target.value)}
+                                    value={name}
+                                    className="w-full bg-transparent p-0 text-sm  text-gray-500 focus:outline-none" id="name" type="text" placeholder="Your name" />
+                                </label>
+
+                                <label className="relative block p-3 border-2 my-3 border-black rounded" htmlFor="brand">
+                                    <span className="text-md font-semibold text-zinc-900" htmlFor="name">
+                                        Brand Name
+                                    </span>
+                                    <input 
+                                    onChange={e => setBrand(e.target.value)}
+                                    value={brand}
+                                    className="w-full bg-transparent p-0 text-sm  text-gray-500 focus:outline-none" id="brand" type="text" placeholder="Brand name" />
+                                </label>
+
+                                <label className="relative block p-3 border-2 my-3 border-black rounded" htmlFor="email">
+                                    <span className="text-md font-semibold text-zinc-900" htmlFor="name">
+                                        Email
+                                    </span>
+                                    <input
+                                    onChange={e => setEmail(e.target.value)}
+                                    value={email}
+                                    className="w-full bg-transparent p-0 text-sm  text-gray-500 focus:outline-none" id="email" type="email" placeholder="Your email" />
+                                </label>
+
+                                <label className="relative block p-3 border-2 my-3 border-black rounded" htmlFor="phone">
+                                    <span className="text-md font-semibold text-zinc-900" htmlFor="name">
+                                        Phone
+                                    </span>
+                                    <input 
+                                    onChange={e => setPhone(e.target.value)}
+                                    value={phone}
+                                    className="w-full bg-transparent p-0 text-sm  text-gray-500 focus:outline-none" id="phone" type="text" placeholder="Your contact no." />
+                                </label>
+
+                                <label className="relative block p-3 border-2 my-3 border-black rounded" htmlFor="phone">
+                                    <span className="text-md font-semibold text-zinc-900" htmlFor="budget">
+                                        Budget estimated
+                                    </span>
+                                    <input 
+                                    onChange={e => setBudget(e.target.value)}
+                                    value={budget}
+                                    className="w-full bg-transparent p-0 text-sm  text-gray-500 focus:outline-none" id="budget" type="text" placeholder="How much you can spend." />
+                                </label>
+
+                                <label className="relative block p-3 border-2 my-4 border-black rounded" htmlFor="description">
+                                    <span className="text-md font-semibold text-zinc-900" htmlFor="description">
+                                        What are you looking for?
+                                    </span>
+                                    <textarea
+                                    onChange={e => setDescription(e.target.value)}
+                                    value={description}
+                                    className="w-full bg-transparent p-0 text-sm h-32  text-gray-500 focus:outline-none" id="description" type="text" placeholder="Type your message here." />
+                                </label>
+
+                                <button type="submit" className="mt-5 border-2 px-5 py-2 rounded-lg border-black border-b-4 font-black translate-y-2 border-l-4">
+                                    Submit
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
             <WhyInfluencers />
-            <Gallery pagefor="brandPage" />
+            <ExaggerationSection />
+            {/* <Gallery pagefor="brandPage" /> */}
         </>
     )
 }

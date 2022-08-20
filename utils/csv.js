@@ -6,7 +6,6 @@ const arrify = (arr = []) => {
        const subArr = Object.values(obj);
        res.push(subArr);
     };
-    console.log(res);
     return res;
  };
 
