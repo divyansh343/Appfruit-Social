@@ -33,13 +33,13 @@ const Hero = () => {
                         </div>
                         <div className="grid grid-cols-5 grid-rows-4 gap-4 md:w-5/12 lg:w-6/12">
                             <div className="col-span-2 row-span-4">
-                                <Image src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" className="rounded-full" width="640" height="960" alt="thesocialcharts" loading="lazy" />
+                                <Image src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" className="rounded-full" width="640" height="960" alt="thesocialcharts influencer agency in india" loading="lazy" />
                             </div>
                             <div className="col-span-2 row-span-2">
-                                <Image src="https://images.unsplash.com/photo-1599824701954-d1d141704de9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" className="w-full h-full object-cover object-top rounded-xl" width="640" height="640"  loading="lazy" alt="thesocialcharts" />
+                                <Image src="https://images.unsplash.com/photo-1599824701954-d1d141704de9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" className="w-full h-full object-cover object-top rounded-xl" width="640" height="640"  loading="lazy" alt="thesocialcharts influencer agency in india" />
                             </div>
                             <div className="col-span-3 row-span-3">
-                                <Image src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fG9mZmljZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" className="w-full h-full object-cover object-top rounded-xl" width="640" height="427" alt="thesocialcharts" loading="lazy" />
+                                <Image src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fG9mZmljZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" className="w-full h-full object-cover object-top rounded-xl" width="640" height="427" alt="thesocialcharts influencer agency in india" loading="lazy" />
                             </div>
                         </div>
                     </div>
