@@ -9,10 +9,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <link rel="shortcut icon" href="/favicon.ico" />
-        <title>The SocialCharts</title>
+        <title>SocialCharts</title>
         <meta name='description' content="theSocialCharts is leading Influencer Marketing Agency in India connecting top brands with passionate socially engaged audiences through social media influencers.
         " />
       </Head>

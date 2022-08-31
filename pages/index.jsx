@@ -38,7 +38,7 @@ export default function Home() {
                             </div>
                             <div className="w-full md:w-1/2">
                                 <div className="w-full h-auto overflow-hidden rounded-md shadow-xl sm:rounded-xl">
-                                    <Image src="https://images.unsplash.com/photo-1517677129300-07b130802f46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Influencer marketing agency"
+                                    <Image src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="the social charts Influencer marketing agency"
                                         width={550}
                                         height={360}
                                     />
@@ -131,7 +131,7 @@ export default function Home() {
 
                 {/* showoff image gallery */}
                 
-                <Gallery pagefor="homePage" />
+                {/* <Gallery pagefor="homePage" /> */}
             </div>
         </>
     )

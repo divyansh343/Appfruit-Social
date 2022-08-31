@@ -3,7 +3,7 @@ import Image from 'next/image'
 const WhyInfluencers = () => {
   return (
     <>
-    <section className="py-20 bg-yellow-50">
+    <section className="py-20 bg-blue-50">
                     <div className="container items-center max-w-6xl px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
                         <div className="flex flex-wrap items-center -mx-3">
                             <div className="order-1 w-full px-3 lg:w-1/2 lg:order-0">
@@ -32,11 +32,9 @@ const WhyInfluencers = () => {
                                 <Image
                                     width={370}
                                     height={520}
-                                    alt="why do you believe in social media marketing"
+                                    alt="why do you believe in influencer marketing"
                                     className="mx-auto sm:max-w-sm lg:max-w-full"
-                                    src="https://images.unsplash.com/photo-1578996953841-b187dbe4bc8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60" />
-
-
+                                    src="https://images.unsplash.com/photo-1532635248-cdd3d399f56c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTc3fHxwZW9wbGV8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" />
                             </div>
                         </div>
                     </div>
