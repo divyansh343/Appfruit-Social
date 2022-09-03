@@ -12,6 +12,21 @@ import ExaggerationSection from '../components/homepage/exaggerationSection'
 export default function Home() {
     return (
         <>
+        <Head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7807770989806387"
+     crossOrigin="anonymous">
+        
+     </script>
+<ins className="adsbygoogle"
+     style={{display:"block"}}
+     data-ad-format="fluid"
+     data-ad-layout-key="+2f+s7+g-6d+9i"
+     data-ad-client="ca-pub-7807770989806387"
+     data-ad-slot="6026677400"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        </Head>
             <div className='pt-0'>
                 <Hero />
                 <section className="px-2 py-32 bg-white md:px-0">
