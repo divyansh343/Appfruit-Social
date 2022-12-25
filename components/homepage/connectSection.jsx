@@ -22,7 +22,7 @@ const ConnectSection = () => {
         });
 
         let reqOptions = {
-            url: `https://infmark.herokuapp.com/api/v1/social/contact`,
+            url: `https://social-charts.onrender.com/api/v1/social/contact`,
             method: "POST",
             headers: headersList,
             data: bodyContent,

@@ -31,7 +31,7 @@ const BrandRegister = () => {
         });
 
         let reqOptions = {
-            url: `https://infmark.herokuapp.com/api/v1/social/regbrand`,
+            url: `https://social-charts.onrender.com/api/v1/social/regbrand`,
             method: "POST",
             headers: headersList,
             data: bodyContent,

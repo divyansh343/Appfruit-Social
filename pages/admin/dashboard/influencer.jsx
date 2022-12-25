@@ -21,7 +21,7 @@ const Page = () => {
        }
        
        let reqOptions = {
-         url: "https://infmark.herokuapp.com/api/v1/dashboard/influencers",
+         url: "https://social-charts.onrender.com/api/v1/dashboard/influencers",
          method: "GET",
          headers: headersList,
        }
