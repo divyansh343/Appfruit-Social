@@ -28,7 +28,7 @@ const Login = () => {
         });
 
         let reqOptions = {
-            url: "https://infmark.herokuapp.com/api/auth/signin",
+            url: "https://social-charts.onrender.com/api/auth/signin",
             method: "POST",
             headers: headersList,
             data: bodyContent,

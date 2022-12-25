@@ -39,7 +39,7 @@ const InfluencerRegister = () => {
     });
 
     let reqOptions = {
-      url: `https://infmark.herokuapp.com/api/v1/social/reginfluencer`,
+      url: `https://social-charts.onrender.com/api/v1/social/reginfluencer`,
       method: "POST",
       headers: headersList,
       data: bodyContent,
